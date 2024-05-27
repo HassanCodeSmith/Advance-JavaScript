@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Variables</title>
+  </head>
+  <body>
+    <script>
+      /**
+      // var have global scope
+      var a = 5;
+      var a = 10;
+      console.log(a); // 10
+
+      */
+
+      /**
+        // let have block scope
+        let b = 5;
+        let b = 10; // Uncaught SyntaxError: Identifier b already have been declared
+        b = 9;
+        console.log(b); // 9
+       * */
+
+      /**
+        // const also have blcok socope
+        const c = 23;
+        const c = 12; // UnCaught SyntaxError: Identifier c already have been declared
+        c = 34; // UnCaught TypeError: Assignemnt to constant variable
+        * */
+
+      if (true) {
+        var d = 546;
+      }
+      console.log(d); // 546
+
+      if (true) {
+        let e = 343;
+      }
+      console.log(e); // UnCaught ReferenceError: e is not defined
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Strings</title>
+  </head>
+  <body>
+    <script>
+      //   var user = "Yahoo Baba";
+      //   var user = {
+      //     fName: "Yahoo",
+      //     lName: "Baba",
+      //   };
+      //   //   var greet = `Hello ${user.fName}`;
+      //   console.log("Hello ", user);
+
+      function fullName(firstName, lastName) {
+        return `${firstName} ${lastName}`;
+      }
+
+      let hello = `Hello ${fullName(firstName, lastName)}`;
+
+      document.write(hello);
+      console.log(hello);
+
+      let firstName;
+      let lastName;
+    </script>
+  </body>
+</html>
